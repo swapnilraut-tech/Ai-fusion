@@ -8,7 +8,7 @@ const Provider = ({ children, ...props }) => {
       enableSystem
       disableTransitionOnChange
       {...props}
-    >
+    > 
       {children}
     </NextThemesProvider>
   );
