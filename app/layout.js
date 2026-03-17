@@ -1,12 +1,19 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono,Outfit } from "next/font/google";
 import "./globals.css";
 import Provider from "./Provider";
+import { SidebarProvider } from "@/components/ui/sidebar";
+import Header from "./_components/constant/Header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
 
+const outfit = Outfit({
+  variable: "--font-outfit",
+  subsets: ["latin"],
+}
+)
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
@@ -21,11 +28,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${outfit.className} antialiased`}
       >
         <Provider>
-          
-        {children}
+          <Header />
+          {children}
         </Provider>
       </body>
     </html>
