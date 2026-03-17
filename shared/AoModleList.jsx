@@ -49,7 +49,7 @@ export  const AiModel = [
   },
   {
     model: "Mistral",
-    icon: "/Ai-logos/window.png",
+    icon: "/Ai-logos/glob.svg",
     premium: false,
     enable: true,
     subModel: [

@@ -1,4 +1,4 @@
-'use client'
+
 
 import React from 'react'
 import {AiModel} from '@/shared/AoModleList'
@@ -14,8 +14,8 @@ const AiMultiModels = () => {
               <Image
                 key={model.model}
                 alt={model.model}
-                height={300}
-                width={300}
+                height={24}
+                width={24}
                 src={model.icon}
               />
             )
