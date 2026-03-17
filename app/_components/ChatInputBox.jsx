@@ -10,10 +10,9 @@ import AiMultiModels from './AiMultiModels';
 const ChatInputBox = () => {
   return (
     <div className=''>
-       <AiMultiModels />
+      <AiMultiModels />
       <div
-        className=" w-full  min-h-[80vh] flex justify-center   px-4
-     items-end "
+        className="w-full min-h-[80vh] flex justify-center px-4 items-end"
       >
         <div className="w-full  border inset-0 rounded-xl shadow-md max-w-2xl p-4">
           <Input

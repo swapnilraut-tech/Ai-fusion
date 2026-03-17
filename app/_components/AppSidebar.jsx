@@ -12,6 +12,7 @@ import Image from "next/image";
 
 export function AppSidebar() {
     const {theme,setTheme} = useTheme()
+
   return (
     <Sidebar>
       <SidebarHeader>
@@ -24,11 +25,9 @@ export function AppSidebar() {
             className="w-[40px] h-[40px] "
           />
           <h2 className="text-xl font-bold">Ai Fusion</h2>
-          {theme === "dark" ? (
-            <Button onClick={() => setTheme("light")}>Light</Button>
-          ) : (
-            <Button onClick={() => setTheme("dark")}>Dark</Button>
-          )}
+          <Button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
+            Toggle Theme
+          </Button>
         </div>
         <Button className={"w-full mt-7 "} size="lg">
           + New Chat
