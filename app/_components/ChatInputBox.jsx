@@ -35,7 +35,6 @@ const ChatInputBox = () => {
                     <Send />
                 </Button>
             </div>
-            <div></div>
           </div>
         </div>
       </div>
