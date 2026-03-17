@@ -5,11 +5,12 @@ import { Send } from 'lucide-react';
 import { Mic } from 'lucide-react';
 import { Paperclip } from 'lucide-react';
 import React from 'react'
+import AiMultiModels from './AiMultiModels';
 
 const ChatInputBox = () => {
   return (
     <div className=''>
-       
+       <AiMultiModels />
       <div
         className=" w-full  min-h-[80vh] flex justify-center   px-4
      items-end "

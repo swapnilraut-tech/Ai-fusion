@@ -1,4 +1,4 @@
-export default AiModel = [
+export  const AiModel = [
   {
     model: "GPT",
     icon: "/Ai-logos/gpt.png",
